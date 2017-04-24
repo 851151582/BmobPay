@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sannas.bmobpay.PayActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/bt_alipay"
+            android:layout_margin="33dp"
+            android:layout_width="233dp"
+            android:layout_height="66dp"
+            android:background="@drawable/alipay_icon"/>
+        <Button
+            android:id="@+id/bt_wechatpay"
+            android:layout_margin="33dp"
+            android:layout_width="233dp"
+            android:layout_height="66dp"
+            android:background="@drawable/wechatpay_icon"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/bt_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="订单查询"/>
+    <EditText
+        android:id="@+id/order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="订单号"
+        android:visibility="gone" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/ll" >
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+
+</LinearLayout>
